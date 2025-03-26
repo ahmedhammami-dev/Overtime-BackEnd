@@ -11,6 +11,7 @@
 	<groupId>ahmed_hammami</groupId>
 	<artifactId>overtime</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>overtime</name>
 	<description>project for overtime</description>
 	<url/>
