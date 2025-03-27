@@ -41,8 +41,8 @@ public class OvertimeController {
 
     @CrossOrigin(origins = "*")
     @GetMapping("/findOvertimePerEmployeeByDate/{startDate}/{endDate}")
-    public List<OvertimeResponseDto> findOvertimePerEmployeeByDate(@PathVariable("startDate") @DateTimeFormat(pattern = "yyyy-MM-dd") Date startDate1 , @PathVariable("startDate") @DateTimeFormat(pattern = "yyyy-MM-dd") Date endtDate1){
-        return overtimeService.findOvertimePerEmployeeByDate(startDate1, endtDate1);
+    public List<OvertimeResponseDto> findOvertimePerEmployeeByDate(@PathVariable("startDate") @DateTimeFormat(pattern = "dd-MM-yyyy") Date startDate1 , @PathVariable("endDate") @DateTimeFormat(pattern = "dd-MM-yyyy") Date endDate1){
+        return overtimeService.findOvertimePerEmployeeByDate(startDate1, endDate1);
     }
     @CrossOrigin(origins = "*")
     @GetMapping("/findAllPrices")

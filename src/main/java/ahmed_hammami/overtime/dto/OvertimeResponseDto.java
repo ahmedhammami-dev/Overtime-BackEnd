@@ -5,15 +5,17 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Data
 //@AllArgsConstructor
 @NoArgsConstructor
 
 public class OvertimeResponseDto {
-    private Long nbHoursSum;
+    private BigDecimal nbHoursSum;
     private String firstName;
 
-    public OvertimeResponseDto(Long nbHoursSum, String firstName) {
+    public OvertimeResponseDto(BigDecimal nbHoursSum, String firstName) {
         this.nbHoursSum = nbHoursSum;
         this.firstName = firstName;
     }
