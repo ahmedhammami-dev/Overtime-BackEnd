@@ -3,6 +3,7 @@ package ahmed_hammami.overtime.model.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.sql.Date;
 
 @Getter
