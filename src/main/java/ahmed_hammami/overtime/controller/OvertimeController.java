@@ -29,7 +29,7 @@ public class OvertimeController {
         return overtimeService.addEmployee(employee);
     }
 
-    @GetMapping("/findAllOvertimes")
+        @GetMapping("/findAllOvertimes")
     public List<Overtime> findAllOvertimes() {
         return overtimeService.findAllOvertimes();
     }
@@ -50,5 +50,9 @@ public class OvertimeController {
         return overtimeService.findAllPrices();
     }
 
+    @GetMapping("/hi")
+    public String sayHi(){
+        return "hihihi";
+    }
 
 }
