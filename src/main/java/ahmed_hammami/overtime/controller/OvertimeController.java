@@ -19,6 +19,7 @@ public class OvertimeController {
     @Autowired
     IOvertimeService overtimeService;
 
+    @CrossOrigin(origins = "*")
     @GetMapping("/findAllEmployees")
     public List<Employee> findAllEmployees() {
         return overtimeService.findAllEmployees();
@@ -50,7 +51,7 @@ public class OvertimeController {
         return overtimeService.findAllPrices();
     }
 
-    @GetMapping("/hi")
+    @GetMapping("/hih")
     public String sayHi(){
         return "hihihi";
     }
